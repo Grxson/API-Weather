@@ -1,4 +1,4 @@
-import ApiError from "../utils/apiError.js";
+import ApiError from '../utils/apiError.js';
 
 export const errorHandler = (err, req, res, next) => {
     const statusCode = err.statusCode || 500;
@@ -6,4 +6,4 @@ export const errorHandler = (err, req, res, next) => {
         status: "error",
         message: err.message || "Internal Server Error",
     });
-}
+};
